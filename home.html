@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/home.css">
+
+
+</head>
+
+<body>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            
+            <div class="modal-body fs-5 fw-bold" style="text-align: center ; color: #06486C;  height: 250px;">
+                <p>System : EDMS</p>
+                <p>Realesd date : 03-07-2002</p>
+                <p>Version number : 01</p>
+                <p>Sponsored by : JICA</p>
+                <p>Developed by : SmartTech</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" style="background-color: #06486C;">OK</button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light info">
+        <div class="container-fluid">
+            <i class='bx bx-menu'></i>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h3
+                            style=" background-color: #06486C ;position: relative; padding: 10px 20px;border-radius: 30px; z-index: 10000;color: white; box-shadow: 0 0 35px rgb(255 255 255 / 58%);transform: scale(0.8);   ">
+                            EDMS</h3>
+                    </li>
+                    <li class="nav-item">
+                        <div class="profile-details">
+                            <div class="profile-content">
+                                <img src="img/11.jpg">
+                            </div>
+
+                            <div class="name-jop">
+                                <div class="profile-name">khater</div>
+                                <div class="profile-jop">Web Designer</div>
+
+                            </div>
+                            <a href="login.html"
+                                style="text-decoration: none;color: rgba(0, 0, 0, 0.87); margin-top: 5px;">
+                                <i class='bx bx-log-out'></i>
+                            </a>
+
+                            <i class='bx bxs-message-rounded-error' data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!--sidebar-->
+    <div class="sidebar">
+        <!--
+            
+        -->
+        <div class="logo-details">
+            <i class='bx bxl-c-plus-plus'></i>
+            <span class="logo-name">EDMS</span>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="#">
+                    <i class='bx bx-home'></i>
+                    <span class="link-name">Main menu</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link-name">Main menu</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-edit'></i>
+                    <span class="link-name"> Data entry (coal) </span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link-name">Add assests</a></li>
+                </ul>
+
+            </li>
+
+
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-group'></i>
+                    <span class="link-name">User management</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link-name">User groups</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-code-block'></i>
+                    <span class="link-name">Sysrtem code</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link-name">Code System</a></li>
+                </ul>
+
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="link-name">Settings</span>
+                </a>
+                <ul class="sub-menu blank">
+                    <li><a href="#" class="link-name">Sittings</a></li>
+                </ul>
+
+            </li>
+
+            <li>
+                <div class="iocn-links">
+                    <a href="#">
+                        <i class='bx bxs-report'></i>
+                        <span class="link-name">Reports</span>
+                    </a>
+                    <i class='bx bx-chevron-down arrow'></i>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#" class="link-name">Report</a></li>
+                    <li><a href="#">item 2</a></li>
+                    <li><a href="#">item 3</a></li>
+                    <li><a href="#">item 4</a></li>
+                </ul>
+            </li>
+            <!--
+                
+            -->
+
+        </ul>
+    </div>
+    <section class="home-section">
+
+        <div class="container info2">
+            <div class="table">
+                <div class="table-header">
+                    <p class=" mx-2 my-2 fs-3 fw-bold ">CAPMAS data entry (coal) </p>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <div class="row">
+
+                    <div class="col-12">
+
+                        <div class="btn btn-primary">Copy & Paste</div>
+
+                        <div class="btn btn-primary" style="margin-left: 0 ;">CSV Upload <i class='bx bx-upload'
+                                style="font-size: 15px; margin-left: 10px;"></i></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="drops info1 ">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="">Manual entry :-</h4>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom: 25px;">
+                    <div class="col-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Product
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Coal stock</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-item dropdown-toggle" href="#">Coal stock</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item dropdown-toggle" href="#">Coal stock</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+                                            <a href="#" class="dropdown-item dropdown-toggle" href="#">Coal stock</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Year
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="#">2016-17</a></li>
+                                <li><a class="dropdown-item" href="#">2017-18</a></li>
+                                <li><a class="dropdown-item" href="#">2018-19</a></li>
+                                <li><a class="dropdown-item" href="#">2019-20</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4">
+
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Value"
+                            style="width: 55%;float: left;margin-right: 5px;">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false" style="width:40% ;float:right">
+                                Unit
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="float: left;">
+                                <li><a class="dropdown-item" href="#">KT</a></li>
+                                <li><a class="dropdown-item" href="#">T</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-12" style="text-align: end;">
+                        <button class="btn btn-primary"><span>Manual entry</span> <i
+                                class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            
+
+
+
+            <div class="table-section">
+
+
+                <table id="example" class="table table-striped" style="width:95% ">
+                    <thead>
+                        <tr>
+                            <th>Description</th>
+                            <th>Unit</th>
+                            <th>2016-17</th>
+                            <th>2017-18</th>
+                            <th>2018-19</th>
+                            <th>2019-20</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Coal stock change</td>
+                            <td>Kt</td>
+                            <td></td>
+                            <td>0</td>
+                            <td>0</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Coal input to coke oven</td>
+                            <td>Kt</td>
+                            <td></td>
+                            <td>429</td>
+                            <td>495</td>
+                            <td>420</td>
+                        </tr>
+                        <tr>
+                            <td>Coke production</td>
+                            <td>Kt</td>
+                            <td></td>
+                            <td>286</td>
+                            <td>320</td>
+                            <td>250</td>
+                        </tr>
+                        <tr>
+                            <td>Coke stosk change</td>
+                            <td>Kt</td>
+                            <td></td>
+                            <td>42</td>
+                            <td>30</td>
+                            <td>-10</td>
+                        </tr>
+                        <tr>
+                            <td>Coke sales</td>
+                            <td>Kt</td>
+                            <td></td>
+                            <td>328</td>
+                            <td>330</td>
+                            <td>345</td>
+                        </tr>
+
+
+                    </tbody>
+
+                </table>
+
+
+            </div>
+
+        </div>
+        <div class="footer" style="position:absolute; top: 87%;width: 100%;">
+            <div class="row">
+
+
+                <div class="col-12 fs-5" style="text-align: center;">
+                    <span>Developed by <a class="fw-bold text-danger" style="text-decoration: none;" href="#">
+                            SmartTech</a></span>
+                </div>
+            </div>
+
+            <!-- Copyright --
+            <div class="text-center "  style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2021 Copyright:
+                <a class="text-reset fw-bold " href="#">SmartTech</a>
+            </div>
+             -->
+        </div>
+
+
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src='./js/main.min.js'></script>
+
+    <script>
+        let arrow = document.querySelectorAll(".arrow");
+
+        for (var i = 0; i < arrow.length; i++) {
+            arrow[i].addEventListener("click", (e) => {
+                let arrowParent = e.target.parentElement.parentElement;
+                console.log(arrowParent);
+                arrowParent.classList.toggle("showmenu");
+
+            });
+        }
+        let sidebar = document.querySelector(".sidebar");
+        let sidebarBtn = document.querySelector(".bx-menu")
+        sidebarBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("close");
+        })
+
+        $(document).ready(function () {
+            $('#example').DataTable();
+
+        });
+        $('#example').dataTable({
+            "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+            iDisplayLength: 15,
+            iDisplayStart: 5,
+            "oLanguage": {
+                "sUrl": "media/language/de_DE.txt",
+                "sZeroRecords": "There are no records that match your search criterion",
+                "sLengthMenu": " _MENU_ :item per page",
+                "sSearch": "",
+                "oPaginate": {
+                    "sFirst": "<<", // This is the link to the first page
+                    "sPrevious": "<", // This is the link to the previous page
+                    "sNext": ">", // This is the link to the next page
+                    "sLast": ">>" // This is the link to the last page
+                },
+                "sInfo": "of _START_ - _TOTAL_ ",
+                "sInfoEmpty": "Showing 0 to 0 of 0 records",
+                "sInfoFiltered": "(filtered from _MAX_ total records)",
+
+            },
+            "sPaginationType": "full",
+
+            bStateSave: true,
+            dom: '<"top"f>rt<"bottom"pil><"clear">',
+            language: {
+                searchPlaceholder: "Search ... "
+            }
+
+
+
+        });
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>

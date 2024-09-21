@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Noto+Sans+Arabic&family=Poppins:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,400;1,100;1,300&display=swap');
+
+body{
+    overflow: hidden;
+    background-color: #EDF1F7;
+    
+}
+.info{
+    text-align: center;
+    background: #ffffff ;
+    box-shadow: 2px 2px 45px -25px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 740px;
+    height: 100%;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 6.5%;
+   
+}
+
+
+.info img{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 3%;
+
+}
+
+.info h1{
+    color: #424242  ;
+    margin-bottom: 2%;
+    font-family: 'Almarai', sans-serif !important;
+}
+.info .form-label{
+    color: #8f9bb3;
+    font-family: Open Sans, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem; 
+    
+   
+}
+.info .form-control{
+    width: 50%;
+    margin: auto;
+    border-radius: 30px;
+    margin-bottom: 2%;
+    border: solid 1px #767676;
+   padding:0.4375rem 1rem ;
+
+   
+}
+.info ::placeholder{
+    font-size: small;
+    
+    
+}
+.info .btn{
+    border: solid 1px #767676;
+    width: 50%;
+    padding:10px 20px ;
+    border-radius: 30px;
+    margin-top: 1%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: large;
+    
+}
+
